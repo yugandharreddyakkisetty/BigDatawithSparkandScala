@@ -99,10 +99,21 @@ object TempData {
       case ((sum,cnt),td) => if(td.precip < 1.0) (sum,cnt) else (sum+td.tmax,cnt+1)
     }
 
+
+
     println(s"Average max temperature on rainy days (using foldLeft): ${rainySum2/rainyCount2}")
 
     val rainyTemps=data.flatMap(td => if(td.precip < 1.0) Seq.empty else Seq(td.tmax))
     println(s"Average max temperature on rainy days (using flatMap)) ${rainyTemps.sum/rainyTemps.length}")
+
+    val (rainySum3,rainyCount3)= data.aggregate((0.0,0))(
+      {case ((s1,c1),td) => if(td.precip < 1.0) (s1,c1) else (s1+td.tmax,c1+1) },
+      {case ((s1,c1),(s2,c2)) => (s1+s2,c1+c2)}
+    )
+
+    println(s"Average max temperature on rainy days (using aggregate): ${rainySum3/rainyCount3}")
+
+
 
 
     // Average temperature of each month
