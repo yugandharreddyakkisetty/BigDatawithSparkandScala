@@ -30,9 +30,20 @@ object RDDTempData {
       }
     }
 
+    // hottest day
+
+    // date of highest temp
+    val maxTemp=data.map(_.tmax).max
+    val hotDays=data.filter(_.tmax == maxTemp)
+    println(s"Hottest days are ${hotDays.collect().mkString(",")}")
+
+    println(data.max()(Ordering.by(_.tmax)))
+    println(data.reduce((td1,td2) => if(td1.tmax >= td2.tmax ) td1 else td2))
 
 
-println(data.count)
+
+
+
   } // main -- RDDTempData
 
 } // object -- RDDTempData
