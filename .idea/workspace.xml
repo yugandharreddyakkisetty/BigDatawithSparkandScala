@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0ecae15-5c8d-478a-9b50-39ba5e433a92" name="Default Changelist" comment="">
+    <list default="true" id="a0ecae15-5c8d-478a-9b50-39ba5e433a92" name="Default Changelist" comment="Pair RDD examples">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sparkrdd/RDDJoin.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/sparkrdd/RDDTempData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sparkrdd/RDDTempData.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/standardscala/TempData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/standardscala/TempData.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$$anonfun$main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/sparkrdd/RDDTempData$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$12$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$$anonfun$main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/standardscala/TempData$.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,29 +74,32 @@
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="3" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="scala" value="2" />
-          <entry key="txt" value="2" />
+          <entry key="scala" value="3" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Scala" value="2" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Scala" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="1921" />
+          <entry key="scala" value="2819" />
+          <entry key="txt" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="1921" />
+          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="Scala" value="2819" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -96,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/standardscala/TempData.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+            <state relative-caret-position="1683">
+              <caret line="131" selection-start-line="131" selection-end-line="131" />
               <folding>
                 <element signature="e#466#600#0" />
                 <element signature="e#773#1154#0" />
@@ -108,16 +122,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sparkrdd/RDDTempData.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+            <state relative-caret-position="1344">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
               <folding>
-                <element signature="e#484#838#0" />
+                <element signature="e#482#836#0" />
+                <element signature="e#859#873#0" />
+                <element signature="e#1771#1901#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sparkrdd/RDDJoin.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <folding>
+                <element signature="e#449#471#0" />
+                <element signature="e#797#819#0" />
+                <element signature="e#1126#1148#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/la.data.30.Minnesota.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/la.series.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/la.area.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -133,6 +178,7 @@
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/standardscala/TempData.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sparkrdd/RDDTempData.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sparkrdd/RDDJoin.scala" />
       </list>
     </option>
   </component>
@@ -149,6 +195,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,6 +206,11 @@
             <path>
               <item name="MarkLewis" type="b2602c69:ProjectViewProjectNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MarkLewis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -166,31 +218,15 @@
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MarkLewis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MarkLewis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Code" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="sparkrdd" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539170502024" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539541469861" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -205,13 +241,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RDDTempData">
+  <component name="RunManager" selected="Application.RDDJoin">
     <configuration name="MainObj" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.bigdata.higherorder.MainObj" />
       <module name="BigDatawithScala" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bigdata.higherorder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RDDJoin" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="sparkrdd.RDDJoin" />
+      <module name="BigDatawithScala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sparkrdd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -245,19 +294,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="standardscala.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="higherorder" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.bigdata.higherorder.higherorder" />
-      <module name="BigDatawithScala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bigdata.higherorder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -313,19 +349,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.higherorder" />
       <item itemvalue="Application.MainObj" />
       <item itemvalue="Application.SimpleMain" />
       <item itemvalue="Application.TempData" />
       <item itemvalue="Application.RDDTempData" />
+      <item itemvalue="Application.RDDJoin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RDDJoin" />
         <item itemvalue="Application.RDDTempData" />
         <item itemvalue="Application.TempData" />
         <item itemvalue="Application.SimpleMain" />
         <item itemvalue="Application.MainObj" />
-        <item itemvalue="Application.higherorder" />
       </list>
     </recent_temporary>
   </component>
@@ -373,13 +409,20 @@
       <option name="presentableId" value="Default" />
       <updated>1538888284483</updated>
     </task>
+    <task id="LOCAL-00001" summary="Pair RDD examples">
+      <created>1539170553601</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539170553601</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -414,6 +457,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pair RDD examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pair RDD examples" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/bigdata/higherorder/rdd/Test.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/bigdata/higherorder/Higherorder.scala" />
@@ -436,8 +483,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/standardscala/TempData.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="1683">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
           <folding>
             <element signature="e#466#600#0" />
             <element signature="e#773#1154#0" />
@@ -449,10 +496,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sparkrdd/RDDTempData.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+        <state relative-caret-position="1344">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
           <folding>
-            <element signature="e#484#838#0" />
+            <element signature="e#482#836#0" />
+            <element signature="e#859#873#0" />
+            <element signature="e#1771#1901#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/la.series.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/la.area.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/la.data.30.Minnesota.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sparkrdd/RDDJoin.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="e#449#471#0" />
+            <element signature="e#797#819#0" />
+            <element signature="e#1126#1148#0" />
           </folding>
         </state>
       </provider>
