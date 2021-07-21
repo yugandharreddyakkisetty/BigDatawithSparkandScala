@@ -1,0 +1,5 @@
+package sparkrdd
+
+object RDDUnemployment {
+
+}
