@@ -1,0 +1,23 @@
+
+[
++src/main/scala/standardscala/TempData.scala,e\2\e29fa8cf54f22482b1b7138317aab09fc799df7d
+Y
+)src/main/scala/sparkrdd/RDDTempData.scala,3\d\3d8a09ecdca7d7db931431d3d1690ce34f336dc6
+U
+%src/main/scala/sparkrdd/RDDJoin.scala,6\4\6468d89e3a0fdd5f18fa201ef284997bba359c4a
+@
+data/la.area.txt,e\2\e24a66894fa50ed3ac61c303af6dec59259f8f9d
+9
+	build.sbt,7\4\74b95601c3a6d9d565cd312fac64094ec0f9d847
+\
+,src/main/scala/standardscala/Practice2.scala,d\4\d43697ff8efddbb6fb4ff2e72c191c602ae4a8cc
+a
+1src/main/scala/sparkrdd/PracticeRDDTempData.scala,0\b\0b52d57e854799f2355e8cdca45488a044d436c9
+B
+data/la.series.txt,9\b\9b870380d64a49909a9886473972b1bcc68f79d3
+M
+data/la.data.30.Minnesota.txt,6\3\630e9b73c04e9fa45091820a03528d4a758daf03
+]
+-src/main/scala/sparkrdd/RDDUnemployment.scala,1\c\1c2d33988a8d94d260f004e309ce3625b6ba3643
+V
+&src/main/scala/sparksql/NOAAData.scala,0\a\0abde037f1b53a9f82f63ff495da61c742d57437

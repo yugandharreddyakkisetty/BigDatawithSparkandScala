@@ -35,6 +35,7 @@ object TempData {
     // drop header
     val lines = source.getLines().drop(1)
 
+
     /*
     // converting each line into TempData object
     // filter a record if it contain missing value at any location
@@ -67,6 +68,11 @@ object TempData {
         )
     }
   }.toList
+    //.toList
+
+    def ff()=data
+
+
     source.close()
 
     // date of highest temp
@@ -77,6 +83,7 @@ object TempData {
     // above method of finding hottest days take two iterations through the dataset
     // following takes one iteration
     val hotDay1 = data.maxBy(_.tmax)
+
     println(s"Hottest day 1 is $hotDay1")
 
     val hotDay2= data.reduceLeft((d1,d2) => if(d1.tmax >= d2.tmax) d1 else d2)
@@ -119,6 +126,7 @@ object TempData {
     // Average temperature of each month
 
     val monthGroup=data.groupBy(_.month)
+
     val monthlyTemp=monthGroup.map{case(m,days) =>
       m -> days.foldLeft(0.0)((sum,td) => sum+td.tmax)/days.length
     }

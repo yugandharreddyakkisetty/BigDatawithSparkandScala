@@ -9,13 +9,37 @@
 		extra-sbtVersion="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20181007102930"/>
+		date="20210718221256"/>
 	<dependencies>
 		<module organisation="org.scala-sbt" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20181007102922" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20210718221241" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="code-build" conf="test, compile, runtime" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.virtual-void" name="sbt-dependency-graph">
+			<revision name="0.9.2" status="release" pubdate="20180826224956" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/jrudolph/sbt-dependency-graph" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache License 2.0" url="https://github.com/jrudolph/sbt-dependency-graph/raw/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3636" time="0" location="C:\Users\yugandhar.reddy\.ivy2\cache\scala_2.12\sbt_1.0\net.virtual-void\sbt-dependency-graph\ivy-0.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/virtual-void/sbt-dependency-graph_2.12_1.0/0.9.2/sbt-dependency-graph-0.9.2.pom"/>
+				<caller organisation="org.scala-sbt" name="global-plugins" conf="compile" rev="0.9.2" rev-constraint-default="0.9.2" rev-constraint-dynamic="0.9.2" callerrev="0.0" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-dependency-graph" type="jar" ext="jar" status="no" details="" size="140436" time="0" location="C:\Users\yugandhar.reddy\.ivy2\cache\scala_2.12\sbt_1.0\net.virtual-void\sbt-dependency-graph\jars\sbt-dependency-graph-0.9.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/virtual-void/sbt-dependency-graph_2.12_1.0/0.9.2/sbt-dependency-graph-0.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.dwijnand" name="sbt-compat">
+			<revision name="1.2.6" status="release" pubdate="20180210190335" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/dwijnand/sbt-compat" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="2">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2063" time="0" location="C:\Users\yugandhar.reddy\.ivy2\cache\scala_2.12\sbt_1.0\com.dwijnand\sbt-compat\ivy-1.2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.dwijnand/sbt-compat/scala_2.12/sbt_1.0/1.2.6/ivys/ivy.xml"/>
+				<caller organisation="net.virtual-void" name="sbt-dependency-graph" conf="default, compile, runtime, master" rev="1.2.6" rev-constraint-default="1.2.6" rev-constraint-dynamic="1.2.6" callerrev="0.9.2" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-compat" type="jar" ext="jar" status="no" details="" size="3730" time="0" location="C:\Users\yugandhar.reddy\.ivy2\cache\scala_2.12\sbt_1.0\com.dwijnand\sbt-compat\jars\sbt-compat-1.2.6.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.dwijnand/sbt-compat/scala_2.12/sbt_1.0/1.2.6/jars/sbt-compat.jar"/>
+					</artifact>
 				</artifacts>
 			</revision>
 		</module>

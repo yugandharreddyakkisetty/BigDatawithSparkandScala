@@ -4,7 +4,7 @@
 		module="bigdatawithscala$sources"
 		revision="0.1"
 		status="integration"
-		publication="20181007151621"
+		publication="20210719114936"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

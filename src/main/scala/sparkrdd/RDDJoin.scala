@@ -46,6 +46,16 @@ object RDDJoin {
         }.cache()
 
 
+    val rates=data.filter(d=>d.id.endsWith("03"))
+    val decadeGroup=rates.map(d=> (d.id,d.year/100) -> d.value)
+    val decadeAverage=decadeGroup.aggregateByKey(0.0 -> 0)(
+      {case ((s,c),d) => (s+d,c+1)},
+      {case ((s1,c1),(s2,c2)) => (s1+s2,c1+c2)}
+    ).mapValues(t=>t._1/t._2)
+
+    decadeAverage take(5) foreach println
+
+
     spark.stop()
 
 
