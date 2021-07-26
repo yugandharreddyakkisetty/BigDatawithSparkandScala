@@ -21,3 +21,7 @@ M
 -src/main/scala/sparkrdd/RDDUnemployment.scala,1\c\1c2d33988a8d94d260f004e309ce3625b6ba3643
 V
 &src/main/scala/sparksql/NOAAData.scala,0\a\0abde037f1b53a9f82f63ff495da61c742d57437
+I
+data/zip_codes_states.csv,e\3\e36b3bfebfce27ffca295c53a66b55756e547dc3
+W
+'src/main/scala/sparksql/TDatasets.scala,6\0\600c9488d47c07f34db836fd6af266eb2a94c69f
