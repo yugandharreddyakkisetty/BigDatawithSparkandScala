@@ -6,7 +6,11 @@ import org.apache.spark.sql.Encoders._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.DataFrameNaFunctions
+import org.apache.spark.sql.Row
+import org.apache.spark.sql.Column
+import java.sql.Timestamp
 
+case class Employee(Name:String,Account:String,EmpID:String,Doj:Timestamp)
 object WindowUDF {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder().master("local[*]").appName("WidnowsUDF").getOrCreate()
@@ -54,10 +58,11 @@ object WindowUDF {
       ("Nagesh","LBG","2002",102,"2016-10-10"),
       ("Jaya","LBG","2003",102,"2015-10-10"),
       ("Pawan","ANZ","2004",97,"2014-10-10"),
-      ("Charan","ANZ","2005",106,"2014-10-9"),
+      ("Charan","ANZ","2005",106,"2014-10-09"),
       ("Jaya","LBG","2003",102,"2015-10-10"),
       ("Chandra","ANZ","2006",20,"2013-10-10")
     ).toDF("Name","Account","EmpID","Salary","Doj")
+/*
 
     // udf to generate email address of a employee
     val generateEmail = udf { (name:String,account:String)=>name+"@"+account+".com"}
@@ -72,6 +77,48 @@ object WindowUDF {
 */
     spark.udf.register("generateEmpEmail",generateEmail)
     employees.selectExpr("generateEmpEmail(Name,Account)").show()
+
+
+    // UDF -2
+    // Complex UDF
+    // sums employee id and his salary
+    val sumUDF = udf {
+      (arr: Seq[Row]) => {
+        val brr = arr.map(x => Row(x.getAs[Int](0), x.getAs[Int](1)))
+        var kount = 0
+        for (i <- brr) {
+          kount = kount + i(0).toString.toInt + i(1).toString.toInt
+        }
+        kount
+      }
+    }
+
+        employees
+      .groupBy('Account)
+      .agg(collect_list(struct('Salary,'EmpID)) as "salary_empid_list")
+      .withColumn("sumUDF",sumUDF($"salary_empid_list")).show()
+
+    // UDF -3
+
+    val averageUDF = udf{
+      (arr:Seq[Int]) => {
+        arr.sum/arr.length
+      }
+    }
+    employees.groupBy($"Account").agg(collect_list('Salary) as "salary_list").withColumn("Average Salary",averageUDF(col("salary_list"))).show()
+
+    // Working with date and time
+    //first converst Doj  to DateTpye and find the difference
+    employees.withColumn("Doj",to_date('Doj,"yyyy-MM-dd")).withColumn("Exp",datediff(current_date,'Doj)).show()
+*/
+
+    // date to timestamp and timestamp to date conversion
+    employees.printSchema()
+    employees.show()
+    employees
+      .withColumn("Timestamp",unix_timestamp(col("Doj"),"yyyy-MM-dd"))
+      .withColumn("Date_from_ut",from_unixtime(col("Timestamp")))
+      .show()
 
 
   }
